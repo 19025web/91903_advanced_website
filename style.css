@@ -42,6 +42,11 @@ a:hover {
     font-weight: bold;
 }
 
+.active-page {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
 /* Footer */
 footer {
     background: #A08A7E;
@@ -92,5 +97,12 @@ footer p {
     text-align: center;
 }
 
+/* text */
+h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #000;
+}
+
+
 /* Home page */
-@media (max-width: 800px) {}
