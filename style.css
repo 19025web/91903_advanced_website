@@ -1,5 +1,6 @@
-body {
-    margin: 0px;
+* {
+    margin: 0;
+    padding: 0;
     font-family: 'Indie Flower', cursive;
 }
 
@@ -104,5 +105,52 @@ h2 {
     color: #000;
 }
 
-
 /* Home page */
+.main {
+    text-align: center;
+    margin: 40px;
+}
+
+.box {
+    width: max-content;
+    flex: 100%;
+}
+
+.octopi {
+    flex: 50%;
+}
+
+h2 {
+    flex: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.main img {
+    width: 200px;
+    height: auto;
+}
+
+.inline {
+    display: inline-block;
+    flex: auto;
+    justify-items: auto;
+    padding: 30px;
+}
+
+/* Responsive design for different device sizes */
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+    .flex {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1500px) {
+    .flex {
+        flex: 50%;
+    }
+}
