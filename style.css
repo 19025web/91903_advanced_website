@@ -113,11 +113,7 @@ h2 {
 
 .box {
     width: max-content;
-    flex: 100%;
-}
-
-.octopi {
-    flex: 50%;
+    display: flex;
 }
 
 h2 {
@@ -129,16 +125,25 @@ h2 {
     flex-direction: row;
 }
 
-.main img {
-    width: 200px;
-    height: auto;
-}
-
 .inline {
     display: inline-block;
     flex: auto;
     justify-items: auto;
     padding: 30px;
+}
+
+.inline img {
+    width: 200px;
+    height: auto;
+}
+
+.inline p {
+    flex: 50%;
+}
+
+.octopi img {
+    flex: 50%;
+    width: 50%;
 }
 
 /* Responsive design for different device sizes */
@@ -147,10 +152,13 @@ h2 {
     .flex {
         flex-direction: column;
     }
-}
 
-@media (max-width: 1500px) {
-    .flex {
-        flex: 50%;
+    .octopi {
+        flex: 100%;
+        width: 100%;
+    }
+
+    p {
+        flex: 100%;
     }
 }
