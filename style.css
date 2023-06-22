@@ -102,25 +102,17 @@ footer p {
 h2 {
     text-align: center;
     font-size: 24px;
-    letter-spacing: 3px;
-    color: #b1c2fc;
+    letter-spacing: 2px;
+    color: #000;
     text-decoration: underline;
     text-underline-offset: 8px;
+    text-decoration-color: #A08A7E;
 }
 
 /* Home page */
 .main {
     text-align: center;
     margin: 40px;
-}
-
-.box {
-    width: max-content;
-    display: flex;
-}
-
-h2 {
-    flex: 100%;
 }
 
 .flex {
@@ -147,14 +139,50 @@ h2 {
 .octopi {
     display: flex;
     flex-direction: row;
+    margin: 50px;
+}
+
+.box {
+    margin: 150px 50px;
+}
+
+.box2 {
+    margin: 10px 10px;
+    flex: 50%;
 }
 
 .octopi img {
     flex: 50%;
     width: 50%;
 }
-.octopi p{
+
+.octopi p {
     flex: 50%;
+    font-size: larger;
+}
+
+/* Shop now button */
+.octopi button {
+    border: 0px;
+    background-color: #b1c2fc;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 20px;
+}
+
+.inline h3 {
+    color: #000;
+}
+
+/* Hover */
+button:hover {
+    background-color: #A08A7E;
+    transition: 0.5s;
+}
+
+img:not(.box img):hover {
+    transform: translateY(-10px);
+    transition: 0.5s;
 }
 
 /* Responsive design for different device sizes */
@@ -164,12 +192,12 @@ h2 {
         flex-direction: column;
     }
 
-    .octopi{
-        flex: 100%;
-        width: 100%;
+    .octopi {
         flex-direction: column;
     }
-    .octopi img{
+
+    .octopi img {
         flex: 100%;
+        width: auto;
     }
 }
