@@ -181,7 +181,7 @@ button:hover {
 }
 
 img:not(.box img):hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     transition: 0.5s;
 }
 
