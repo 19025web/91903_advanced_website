@@ -138,6 +138,11 @@ h2 {
     flex: 50%;
 }
 
+.container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
 /* box */
 .box {
     margin: 150px 50px;
@@ -152,7 +157,7 @@ h2 {
 .octopi {
     display: flex;
     flex-direction: row;
-    margin: 50px;
+
 }
 
 .octopi img {
@@ -188,28 +193,37 @@ img:not(.box img):hover {
 
 /* Back to top button */
 #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 40px; /* Place the button at the bottom of the page */
-    right: 40px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: #b1c2fc; /* Set a background color */
-    color: #FFFF; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 15px; /* Increase font size */
-    font-family: 'Source Code Pro', monospace;
-  }
-  
-  #myBtn:hover {
-    background-color: #A08A7E; /* Add a brown background on hover */
-  }
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 40px;
+    /* Place the button at the bottom of the page */
+    right: 40px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    outline: none;
+    background-color: #b1c2fc;
+    color: #FFFF;
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+#myBtn:hover {
+    background-color: #819bf1;
+}
 
 /* Responsive design for different device sizes */
 @media (max-width: 800px) {
+    .container {
+        margin: 0px;
+    }
+
     .octopi {
         flex-direction: column;
     }
@@ -219,10 +233,4 @@ img:not(.box img):hover {
         width: auto;
     }
 
-    .col-1,
-    .col-2,
-    .col-3 {
-        flex: 100%;
-        flex-direction: column;
-    }
 }
