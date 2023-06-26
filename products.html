@@ -32,52 +32,62 @@
     <!-- Main Content -->
     <div class="main">
         <h2>Products</h2>
-        <div class="inline">
+
+        <!-- Control buttons for filtering products -->
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')">Show all</button>
+            <button class="btn" onclick="filterSelection('crochet')">Crochet</button>
+            <button class="btn" onclick="filterSelection('paper')">Paper</button>
+            <button class="btn" onclick="filterSelection('beads')">Beads</button>
+            <button class="btn" onclick="filterSelection('needlefelt')">Needle Felt</button>
+        </div>
+
+        <div class="inline filter beads">
             <img src="/img/big-cherry.jpg" alt="Big Cherry Keychain">
             <h3>Big Cherry Keychain</h3>
             <p>Price: $3.00</p>
         </div>
-        <div class="inline">
+        <div class="inline filter crochet">
             <img src="/img/blue-dino.jpg" alt="Blue Triceratops">
             <h3>Blue Triceratops</h3>
             <p>Price: $5.00</p>
         </div>
-        <div class="inline">
+        <div class="inline filter paper">
             <img src="/img/boats.jpg" alt="Boats">
             <h3>Boats</h3>
             <p>Price: $5.00</p>
         </div>
-        <div class="inline">
+        <div class="inline filter needlefelt">
             <img src="/img/boba.jpg" alt="Milk Tea">
             <h3>Milk Tea</h3>
             <p>Price: $4.00</p>
         </div>
-        <div class="inline">
+        <div class="inline filter needlefelt">
             <img src="/img/chicken.jpg" alt="Chicken">
             <h3>Chicken</h3>
             <p>Price: $3.00</p>
         </div>
-        <div class="inline">
+        <div class="inline filter crochet">
             <img src="/img/dango.jpg" alt="Dango">
             <h3>Dango</h3>
             <p>Price: $6.00</p>
         </div>
-        <div class="inline">
+        <div class="inline filter crochet">
             <img src="/img/pink-dino.jpg" alt="Pink Triceratops">
             <h3>Pink Triceratops</h3>
             <p>Price: $5.00</p>
         </div>
-        <div class="inline">
+        <div class="inline filter paper">
             <img src="/img/pastel-stars.jpg" alt="Pastel Stars">
             <h3>Pastel Stars</h3>
             <p>Price: $10.00</p>
         </div>
-        <div class="inline">
+        <div class="inline filter paper">
             <img src="/img/stars.jpg" alt="Stars">
             <h3>Stars</h3>
             <p>Price: $10.00</p>
         </div>
-        <div class="inline">
+        <div class="inline filter paper">
             <img src="/img/crane-in-a-jar.jpg" alt="Crane in a Jar">
             <h3>Crane in a Jar</h3>
             <p>Price: $3.00</p>
@@ -108,8 +118,11 @@
     </footer>
 
     <!-- Back to top button -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
+    <button onclick="topFunction()" id="myBtn" title="Back to top">&uarr;</button>
     <script src="button.js"></script>
+
+    <!-- filter elements -->
+    <script src="filter.js"></script>
 
 </body>
 
