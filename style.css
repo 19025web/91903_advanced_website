@@ -198,6 +198,7 @@ button:hover {
 img:not(.box img):hover {
     transform: translateY(-5px);
     transition: 0.5s;
+    box-shadow: 0 0 3px #819bf1, 0 0 5px #819bf1;
 }
 
 /* Back to top button */
@@ -256,7 +257,6 @@ img:not(.box img):hover {
 .btn.active {
     background-color: #819bf1;
 }
-
 
 /* Responsive design for different device sizes */
 @media (max-width: 800px) {
