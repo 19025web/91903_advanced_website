@@ -195,7 +195,7 @@ button:hover {
 }
 
 /* Image hover transition */
-img:not(.box img):hover {
+img:not(.box img, .logo img):hover {
     transform: translateY(-5px);
     transition: 0.5s;
     box-shadow: 0 0 3px #819bf1, 0 0 5px #819bf1;
