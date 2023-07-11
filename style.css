@@ -263,8 +263,17 @@ img:not(.box img, .logo img):hover {
     display: flex;
 }
 
+.cart table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .cart img {
     width: 100px;
+}
+
+.cart td {
+    padding-inline: 3em;
 }
 
 .total {
@@ -274,7 +283,10 @@ img:not(.box img, .logo img):hover {
 .info {
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+}
+
+.info td {
+    line-height: 3em;
 }
 
 /* Thank you page */
@@ -295,6 +307,10 @@ img:not(.box img, .logo img):hover {
     .octopi img {
         flex: 100%;
         width: auto;
+    }
+
+    .cart {
+        display: block;
     }
 
 }
