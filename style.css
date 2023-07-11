@@ -292,6 +292,7 @@ img:not(.box img, .logo img):hover {
 /* Thank you page */
 .thanks {
     line-height: 3em;
+    padding: 100px;
 }
 
 /* Responsive design for different device sizes */
