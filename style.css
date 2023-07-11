@@ -259,18 +259,29 @@ img:not(.box img, .logo img):hover {
 }
 
 /* Cart page */
-.cart{
+.cart {
     display: flex;
 }
-.cart img{
+
+.cart img {
     width: 100px;
 }
-.cart td{
-    padding-inline: 3em;
-}
-.total{
+
+.total {
     float: right;
 }
+
+.info {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* Thank you page */
+.thanks {
+    line-height: 3em;
+}
+
 /* Responsive design for different device sizes */
 @media (max-width: 800px) {
     .container {
