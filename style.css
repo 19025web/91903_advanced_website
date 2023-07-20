@@ -177,6 +177,8 @@ h2 {
 .octopi p {
     flex: 50%;
     font-size: larger;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 /* Shop now button */
@@ -258,7 +260,7 @@ img:not(.box img, .logo img):hover {
     background-color: #819bf1;
 }
 
-/* Cart page */
+/* order page */
 .cart {
     display: flex;
 }
@@ -273,7 +275,10 @@ img:not(.box img, .logo img):hover {
 }
 
 .cart td {
-    padding-inline: 3em;
+    padding-inline: 2em;
+}
+.cart h3, p, label, input{
+    font-family: 'Montserrat', sans-serif;
 }
 
 .total {
@@ -289,11 +294,52 @@ img:not(.box img, .logo img):hover {
     line-height: 3em;
 }
 
+.cart input{
+    text-align: center;
+    border-radius: 10px;
+    padding: 2px 5px;
+}
+.cart input:focus{
+    outline:none;
+    border-color: #819bf1;
+}
+
+input:hover{
+    border-color: #819bf1;
+}
+
+.info input:focus{
+    outline: none;
+    border-bottom: 2px solid #819bf1;
+}
+
+.info input{
+    border:none;
+    border-radius: 0px;
+    border-bottom: 1px solid #000;
+    text-align: left;
+}
+
+.info label{
+    padding: 2px 5px;
+}
+
+/* show input button up and down arrows */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+   opacity: 1;
+}
+
 /* Thank you page */
 .thanks {
     line-height: 3em;
     padding: 100px;
 }
+
+.thanks p {
+    line-height: 1.5;
+}
+
 
 /* Responsive design for different device sizes */
 @media (max-width: 800px) {
