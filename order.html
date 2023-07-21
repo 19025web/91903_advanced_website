@@ -11,6 +11,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@300&display=swap"
         rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script>
+        function SubForm() {
+            $.ajax({
+                url: "https://api.apispreadsheets.com/data/kZZmYdMzXghF3mam/",
+                type: "post",
+                data: $("#details").serializeArray(),
+                success: function () {
+                    alert("Form Data Submitted :)")
+
+                },
+                error: function () {
+                    alert("There was an error :(")
+                }
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -43,7 +62,8 @@
                     </td>
                     <td>
                         <label for="quantity">Quantity:</label>
-                        <input type="number" id="input1" size="5" min="0" max="8" maxlength="1" value="0">
+                        <input type="number" id="input1" size="5" min="0" max="8" maxlength="1" value="0"
+                            name="big-cherry-keychain" />
 
                     </td>
                 </tr>
@@ -55,7 +75,8 @@
                     </td>
                     <td>
                         <label for="quantity">Quantity:</label>
-                        <input type="number" id="input2" size="5" min="0" max="8" maxlength="1" value="0">
+                        <input type="number" id="input2" size="5" min="0" max="8" maxlength="1" value="0"
+                            name="blue-triceratops" />
 
                     </td>
                 </tr>
@@ -67,7 +88,8 @@
                     </td>
                     <td>
                         <label for="quantity">Quantity:</label>
-                        <input type="number" id="input3" size="5" min="0" max="8" maxlength="1" value="0">
+                        <input type="number" id="input3" size="5" min="0" max="8" maxlength="1" value="0"
+                            name="boats" />
 
                     </td>
                 </tr>
@@ -79,7 +101,8 @@
                     </td>
                     <td>
                         <label for="quantity">Quantity:</label>
-                        <input type="number" id="input4" size="5" min="0" max="8" maxlength="1" value="0">
+                        <input type="number" id="input4" size="5" min="0" max="8" maxlength="1" value="0"
+                            name="milk-tea" />
 
                     </td>
                 </tr>
@@ -91,7 +114,8 @@
                     </td>
                     <td>
                         <label for="quantity">Quantity:</label>
-                        <input type="number" id="input5" size="5" min="0" max="8" maxlength="1" value="0">
+                        <input type="number" id="input5" size="5" min="0" max="8" maxlength="1" value="0"
+                            name="chicken" />
 
                     </td>
                 </tr>
@@ -103,7 +127,8 @@
                     </td>
                     <td>
                         <label for="quantity">Quantity:</label>
-                        <input type="number" id="input6" size="5" min="0" max="8" maxlength="1" value="0">
+                        <input type="number" id="input6" size="5" min="0" max="8" maxlength="1" value="0"
+                            name="dango" />
 
                     </td>
                 </tr>
@@ -115,7 +140,8 @@
                     </td>
                     <td>
                         <label for="quantity">Quantity:</label>
-                        <input type="number" id="input7" size="5" min="0" max="8" maxlength="1" value="0">
+                        <input type="number" id="input7" size="5" min="0" max="8" maxlength="1" value="0"
+                            name="pink-triceratops" />
 
                     </td>
                 </tr>
@@ -127,7 +153,8 @@
                     </td>
                     <td>
                         <label for="quantity">Quantity:</label>
-                        <input type="number" id="input8" size="5" min="0" max="8" maxlength="1" value="0">
+                        <input type="number" id="input8" size="5" min="0" max="8" maxlength="1" value="0"
+                            name="pastel-stars" />
 
                     </td>
                 </tr>
@@ -139,7 +166,8 @@
                     </td>
                     <td>
                         <label for="quantity">Quantity:</label>
-                        <input type="number" id="input9" size="5" min="0" max="8" maxlength="1" value="0">
+                        <input type="number" id="input9" size="5" min="0" max="8" maxlength="1" value="0"
+                            name="stars" />
 
                     </td>
                 </tr>
@@ -151,37 +179,42 @@
                     </td>
                     <td>
                         <label for="quantity">Quantity:</label>
-                        <input type="number" id="input10" size="5" min="0" max="8" maxlength="1" value="0">
+                        <input type="number" id="input10" size="5" min="0" max="8" maxlength="1" value="0"
+                            name="crane-in-a-jar" />
                     </td>
                 </tr>
-
             </table>
-            <div class="inline">
-                <button class="btn" onclick="add()"">Total</button>
-            </div>
-            <div class="inline">
-                    <p>$<input id="answer" size="5" readonly="readonly"/></p>
-            </div>
 
             <div class="info">
+                <div class="inline">
+                    <button class="btn" onclick="add()">Total</button>
+                </div>
+                <div class=" inline">
+                    <label>$<input id="answer" size="5" readonly="readonly" name="total" /></label>
+                </div>
+
                 <h2>Details:</h2>
-                <table>
-                    <tr>
-                        <td><label>Name: </label><input type="text" placeholder="Name" required></td>
-                    </tr>
-                    <tr>
-                        <td> <label>Email: </label><input type="email" placeholder="Email" required></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <form action="thanks.html"><button class="btn">Order</button></form>
-                        </td>
-                    </tr>
-                </table>
+                <form id="details">
+
+                    <label>Name: </label>
+                    <input name="name" type="text" placeholder="Name" size="30" required />
+                    </br></br>
+
+                    <label>Email: </label>
+                    <input name="email" type="email" placeholder="Email" size="30" maxlength="254" required />
+                    </br></br>
+
+                    <label>Message: </label>
+                    <textarea name="message" placeholder="message (optional)" size="30"></textarea>
+                    </br></br>
+                </form>
+
+                <button class="btn" onclick="SubForm()">Order</button>
+
             </div>
         </div>
     </div>
-    </div>
+
 
     <!-- footer -->
     <footer>

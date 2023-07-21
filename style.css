@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Navigation Bar */
@@ -32,6 +32,7 @@ nav .logo img {
     max-width: auto;
     margin: 5px;
 }
+
 
 a {
     text-decoration: none;
@@ -112,6 +113,8 @@ h2 {
     text-underline-offset: 8px;
     text-decoration-color: #A08A7E;
     padding: 30px 0px;
+    font-family: 'Indie Flower', cursive;
+
 }
 
 .box2 h2 {
@@ -277,7 +280,11 @@ img:not(.box img, .logo img):hover {
 .cart td {
     padding-inline: 2em;
 }
-.cart h3, p, label, input{
+
+.cart h3,
+p,
+label,
+input {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -288,46 +295,66 @@ img:not(.box img, .logo img):hover {
 .info {
     margin-left: auto;
     margin-right: auto;
+    font-size: large;
 }
 
 .info td {
     line-height: 3em;
 }
 
-.cart input{
+.cart input {
     text-align: center;
     border-radius: 10px;
     padding: 2px 5px;
+    font-size: large;
+
 }
-.cart input:focus{
-    outline:none;
+
+.cart input:focus {
+    outline: none;
     border-color: #819bf1;
 }
 
-input:hover{
+input:hover {
     border-color: #819bf1;
 }
 
-.info input:focus{
+.info input:focus {
     outline: none;
     border-bottom: 2px solid #819bf1;
 }
 
-.info input{
-    border:none;
+.info input {
+    border: none;
     border-radius: 0px;
     border-bottom: 1px solid #000;
     text-align: left;
 }
 
-.info label{
+.info label {
     padding: 2px 5px;
+    line-height: 50px;
 }
 
 /* show input button up and down arrows */
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button {  
-   opacity: 1;
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+}
+
+textarea {
+    width: 20em;
+    height: 100px;
+    padding: 12px;
+    resize: none;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
 }
 
 /* Thank you page */
