@@ -263,6 +263,10 @@ img:not(.box img, .logo img):hover {
     background-color: #819bf1;
 }
 
+.order {
+    width: 30em;
+}
+
 /* order page */
 .cart {
     display: flex;

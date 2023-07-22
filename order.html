@@ -14,22 +14,7 @@
 
     <script src="https://code.jquery.com/jquery-3.7.0.js"
         integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
-    <script>
-        function SubForm() {
-            $.ajax({
-                url: "https://api.apispreadsheets.com/data/kZZmYdMzXghF3mam/",
-                type: "post",
-                data: $("#details").serializeArray(),
-                success: function () {
-                    alert("Form Data Submitted :)")
 
-                },
-                error: function () {
-                    alert("There was an error :(")
-                }
-            });
-        }
-    </script>
 </head>
 
 <body>
@@ -195,21 +180,20 @@
 
                 <h2>Details:</h2>
                 <form id="details">
-
-                    <label>Name: </label>
+                    <label for="name">Name: </label>
                     <input name="name" type="text" placeholder="Name" size="30" required />
                     </br></br>
 
-                    <label>Email: </label>
+                    <label for="email">Email: </label>
                     <input name="email" type="email" placeholder="Email" size="30" maxlength="254" required />
                     </br></br>
 
-                    <label>Message: </label>
+                    <label for="message">Message: </label>
                     <textarea name="message" placeholder="message (optional)" size="30"></textarea>
                     </br></br>
                 </form>
 
-                <button class="btn" onclick="SubForm()">Order</button>
+                <button class="btn order" type="submit" onclick="SubForm()">Order</button>
 
             </div>
         </div>
