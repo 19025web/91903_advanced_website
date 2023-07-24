@@ -16,18 +16,3 @@ function add() {
   document.getElementById("answer").value = result;
 }
 
-function SubForm() {
-  $.ajax({
-    url: "https://api.apispreadsheets.com/data/kZZmYdMzXghF3mam/",
-    type: "post",
-    data: $("#details").serializeArray(),
-    success: function () {
-      alert("Form Data Submitted :)")
-      window.location.href = "thanks.html";
-    },
-    error: function () {
-      alert("There was an error :(")
-    }
-  });
-  
-}
