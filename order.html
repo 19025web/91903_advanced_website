@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<head>
+<head xmlns="http://www.w3.org/1999/html">
     <meta charset="UTF-8">
     <meta name="description" content="Nicole's Crafts website">
     <meta name="author" content="Nicole Wong">
@@ -11,9 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@300&display=swap"
         rel="stylesheet">
-
-    <script src="https://code.jquery.com/jquery-3.7.0.js"
-        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 
 </head>
 
@@ -37,166 +34,169 @@
     <!-- Main Content -->
     <div class="main">
         <h2>Order</h2>
-        <div class="cart">
-            <table>
-                <tr>
-                    <td><img src="/img/big-cherry.jpg" alt="Big Cherry Keychain"></td>
-                    <td>
-                        <h3>Big Cherry Keychain</h3>
-                        <p>Price: $3.00</p>
-                    </td>
-                    <td>
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" id="input1" size="5" min="0" max="8" maxlength="1" value="0"
-                            name="big-cherry-keychain" />
 
-                    </td>
-                </tr>
-                <tr>
-                    <td><img src="/img/blue-dino.jpg" alt="Blue Triceratops"></td>
-                    <td>
-                        <h3>Blue Triceratops</h3>
-                        <p>Price: $5.00</p>
-                    </td>
-                    <td>
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" id="input2" size="5" min="0" max="8" maxlength="1" value="0"
-                            name="blue-triceratops" />
+        <form action="https://sheetdb.io/api/v1/p6pee7ga68ghz" method="post" id="details">
 
-                    </td>
-                </tr>
-                <tr>
-                    <td><img src="/img/boats.jpg" alt="Boats"></td>
-                    <td>
-                        <h3>Boats</h3>
-                        <p>Price: $5.00</p>
-                    </td>
-                    <td>
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" id="input3" size="5" min="0" max="8" maxlength="1" value="0"
-                            name="boats" />
+            <div class="cart">
+                <table>
+                    <tr>
+                        <td><img src="/img/big-cherry.jpg" alt="Big Cherry Keychain"></td>
+                        <td>
+                            <h3>Big Cherry Keychain</h3>
+                            <p>Price: $3.00</p>
+                        </td>
+                        <td>
+                            <label for="big-cherry-keychain">Quantity:</label>
+                            <input type="number" id="input1" size="5" min="0" max="8" maxlength="1" value="0"
+                                name="data[big-cherry-keychain]" />
 
-                    </td>
-                </tr>
-                <tr>
-                    <td><img src="/img/boba.jpg" alt="Milk Tea"></td>
-                    <td>
-                        <h3>Milk Tea</h3>
-                        <p>Price: $4.00</p>
-                    </td>
-                    <td>
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" id="input4" size="5" min="0" max="8" maxlength="1" value="0"
-                            name="milk-tea" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="/img/blue-dino.jpg" alt="Blue Triceratops"></td>
+                        <td>
+                            <h3>Blue Triceratops</h3>
+                            <p>Price: $5.00</p>
+                        </td>
+                        <td>
+                            <label for="blue-triceratops">Quantity:</label>
+                            <input type="number" id="input2" size="5" min="0" max="8" maxlength="1" value="0"
+                                name="data[blue-triceratops]" />
 
-                    </td>
-                </tr>
-                <tr>
-                    <td><img src="/img/chicken.jpg" alt="Chicken"></td>
-                    <td>
-                        <h3>Chicken</h3>
-                        <p>Price: $3.00</p>
-                    </td>
-                    <td>
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" id="input5" size="5" min="0" max="8" maxlength="1" value="0"
-                            name="chicken" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="/img/boats.jpg" alt="Boats"></td>
+                        <td>
+                            <h3>Boats</h3>
+                            <p>Price: $5.00</p>
+                        </td>
+                        <td>
+                            <label for="boats">Quantity:</label>
+                            <input type="number" id="input3" size="5" min="0" max="8" maxlength="1" value="0"
+                                name="data[boats]" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="/img/boba.jpg" alt="Milk Tea"></td>
+                        <td>
+                            <h3>Milk Tea</h3>
+                            <p>Price: $4.00</p>
+                        </td>
+                        <td>
+                            <label for="milk-tea">Quantity:</label>
+                            <input type="number" id="input4" size="5" min="0" max="8" maxlength="1" value="0"
+                                name="data[milk-tea]" />
 
-                    </td>
-                </tr>
-                <tr>
-                    <td><img src="/img/dango.jpg" alt="Dango"></td>
-                    <td>
-                        <h3>Dango</h3>
-                        <p>Price: $6.00</p>
-                    </td>
-                    <td>
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" id="input6" size="5" min="0" max="8" maxlength="1" value="0"
-                            name="dango" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="/img/chicken.jpg" alt="Chicken"></td>
+                        <td>
+                            <h3>Chicken</h3>
+                            <p>Price: $3.00</p>
+                        </td>
+                        <td>
+                            <label for="chicken">Quantity:</label>
+                            <input type="number" id="input5" size="5" min="0" max="8" maxlength="1" value="0"
+                                name="data[chicken]" />
 
-                    </td>
-                </tr>
-                <tr>
-                    <td><img src="/img/pink-dino.jpg" alt="Pink Triceratops"></td>
-                    <td>
-                        <h3>Pink Triceratops</h3>
-                        <p>Price: $5.00</p>
-                    </td>
-                    <td>
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" id="input7" size="5" min="0" max="8" maxlength="1" value="0"
-                            name="pink-triceratops" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="/img/dango.jpg" alt="Dango"></td>
+                        <td>
+                            <h3>Dango</h3>
+                            <p>Price: $6.00</p>
+                        </td>
+                        <td>
+                            <label for="dango">Quantity:</label>
+                            <input type="number" id="input6" size="5" min="0" max="8" maxlength="1" value="0"
+                                name="data[dango]" />
+                        </td>
+                    </tr>
 
-                    </td>
-                </tr>
-                <tr>
-                    <td><img src="/img/pastel-stars.jpg" alt="Pastel Stars"></td>
-                    <td>
-                        <h3>Pastel Stars</h3>
-                        <p>Price: $10.00</p>
-                    </td>
-                    <td>
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" id="input8" size="5" min="0" max="8" maxlength="1" value="0"
-                            name="pastel-stars" />
+                    <tr>
+                        <td><img src="/img/pink-dino.jpg" alt="Pink Triceratops"></td>
+                        <td>
+                            <h3>Pink Triceratops</h3>
+                            <p>Price: $5.00</p>
+                        </td>
+                        <td>
+                            <label for="pink-triceratops">Quantity:</label>
+                            <input type="number" id="input7" size="5" min="0" max="8" maxlength="1" value="0"
+                                name="data[pink-triceratops]" />
+                        </td>
+                    </tr>
 
-                    </td>
-                </tr>
-                <tr>
-                    <td><img src="/img/stars.jpg" alt="Stars"></td>
-                    <td>
-                        <h3>Stars</h3>
-                        <p>Price: $10.00</p>
-                    </td>
-                    <td>
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" id="input9" size="5" min="0" max="8" maxlength="1" value="0"
-                            name="stars" />
+                    <tr>
+                        <td><img src="/img/pastel-stars.jpg" alt="Pastel Stars"></td>
+                        <td>
+                            <h3>Pastel Stars</h3>
+                            <p>Price: $10.00</p>
+                        </td>
+                        <td>
+                            <label for="pastel-stars">Quantity:</label>
+                            <input type="number" id="input8" size="5" min="0" max="8" maxlength="1" value="0"
+                                name="data[pastel-stars]" />
+                        </td>
+                    </tr>
 
-                    </td>
-                </tr>
-                <tr>
-                    <td><img src="/img/crane-in-a-jar.jpg" alt="Crane in a Jar"></td>
-                    <td>
-                        <h3>Crane in a Jar</h3>
-                        <p>Price: $3.00</p>
-                    </td>
-                    <td>
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" id="input10" size="5" min="0" max="8" maxlength="1" value="0"
-                            name="crane-in-a-jar" />
-                    </td>
-                </tr>
-            </table>
+                    <tr>
+                        <td><img src="/img/stars.jpg" alt="Stars"></td>
+                        <td>
+                            <h3>Stars</h3>
+                            <p>Price: $10.00</p>
+                        </td>
+                        <td>
+                            <label for="stars">Quantity:</label>
+                            <input type="number" id="input9" size="5" min="0" max="8" maxlength="1" value="0"
+                                name="data[stars]" />
+                        </td>
+                    </tr>
 
-            <div class="info">
-                <div class="inline">
-                    <button class="btn" onclick="add()">Total</button>
+                    <tr>
+                        <td><img src="/img/crane-in-a-jar.jpg" alt="Crane in a Jar"></td>
+                        <td>
+                            <h3>Crane in a Jar</h3>
+                            <p>Price: $3.00</p>
+                        </td>
+                        <td>
+                            <label for="crane-in-a-jar">Quantity:</label>
+                            <input type="number" id="input10" size="5" min="0" max="8" maxlength="1" value="0"
+                                name="data[crane-in-a-jar]" />
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="info">
+                    <div class="inline">
+                        <button class="btn" onclick="add()">Total</button>
+                    </div>
+                    <div class=" inline">
+                        <label>$<input id="answer" size="5" readonly="readonly" name="data[total]" /></label>
+                    </div>
+
+                    <h2>Details:</h2>
+                    <div id="details">
+                        <label for="name">Name: </label>
+                        <input name="data[name]" type="text" placeholder="Name" size="30" required />
+                        </br></br>
+
+                        <label for="email">Email: </label>
+                        <input name="data[email]" type="email" placeholder="Email" size="30" maxlength="254" required />
+                        </br></br>
+
+                        <label for="message">Message: </label>
+                        <textarea name="data[message]" placeholder="message (optional)" size="30"></textarea>
+                        </br></br>
+                    </div>
+
+                    <button class="btn order" type="submit">Order</button>
+
                 </div>
-                <div class=" inline">
-                    <label>$<input id="answer" size="5" readonly="readonly" name="total" /></label>
-                </div>
-
-                <h2>Details:</h2>
-                <form id="details">
-                    <label for="name">Name: </label>
-                    <input name="name" type="text" placeholder="Name" size="30" required />
-                    </br></br>
-
-                    <label for="email">Email: </label>
-                    <input name="email" type="email" placeholder="Email" size="30" maxlength="254" required />
-                    </br></br>
-
-                    <label for="message">Message: </label>
-                    <textarea name="message" placeholder="message (optional)" size="30"></textarea>
-                    </br></br>
-                </form>
-
-                <button class="btn order" type="submit" onclick="SubForm()">Order</button>
-
             </div>
-        </div>
+        </form>
     </div>
 
 
@@ -229,6 +229,22 @@
 
     <script src="/js/total.js"></script>
 
+    <script>
+        var form = document.getElementById('details');
+        form.addEventListener("submit", e => {
+            e.preventDefault();
+            fetch(form.action, {
+                method: "POST",
+                body: new FormData(document.getElementById("details")),
+            }).then(
+                response => response.json()
+            ).then((html) => {
+                // you can put any JS code here
+                window.open('thanks.html', '_blank');
+
+            });
+        });
+    </script>
 </body>
 
 </html>
