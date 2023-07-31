@@ -29,10 +29,8 @@ nav {
 
 nav .logo img {
     height: 70px;
-    max-width: auto;
     margin: 5px;
 }
-
 
 a {
     text-decoration: none;
@@ -60,7 +58,6 @@ footer {
 
 footer .logo img {
     height: 150px;
-    max-width: auto;
     margin: 5px;
     padding-left: 20px;
     padding-right: 20px;
@@ -132,13 +129,11 @@ h2 {
 .inline {
     display: inline-block;
     flex: auto;
-    justify-items: auto;
     padding: 30px 50px;
 }
 
 .inline img {
     width: 200px;
-    height: auto;
 }
 
 .inline h3 {
